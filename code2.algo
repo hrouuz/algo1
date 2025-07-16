@@ -9,7 +9,7 @@ BEGIN
     READ(ch);                 
     s := 1; // Start with one word
     n := LENGTH(ch);
-    FOR i := 0 TO n DO
+    FOR i := 1 TO n DO
         if ch[i] = ' ' THEN
             s := s + 1;
         END IF;

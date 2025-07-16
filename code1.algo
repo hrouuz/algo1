@@ -9,10 +9,10 @@ BEGIN
     READ(ch);                 
     s := 0;
     n := LENGTH(ch);
-    FOR i := 0 TO n DO
+    FOR i := 0 TO n-1 DO
         if ch[i] <> ' ' THEN
             s := s + 1;
         END IF;
     END FOR;
-    WRITE("Number of words: ", s);
+    WRITE("Number of letters: ", s);
 END
