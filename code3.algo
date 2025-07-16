@@ -1,0 +1,18 @@
+ALGORITHM The number of vowels in the sentence.
+VAR
+    s : INTEGER;  // word counter
+    n : INTEGER;  // length of sentence
+    ch : STRING;  // input sentence
+    i : INTEGER;  // loop index
+BEGIN
+    WRITE("Enter a sentence: ");
+    READ(ch);                 
+    s := 1; // Start with one word
+    n := LENGTH(ch);
+    FOR i := 0 TO n DO
+        if ch[i] IN ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']  THEN
+            s := s + 1;
+        END IF;
+    END FOR;
+    WRITE("Number of words: ", s);
+END
